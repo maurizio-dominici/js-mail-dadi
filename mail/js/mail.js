@@ -12,7 +12,7 @@ const emailList = [
 ];
 
 const emailUser = prompt("inserisci la tua mail");
-let outputText = "";
+let outputText = "Accesso negato";
 // console.table(emailList, typeof emailList);
 // console.log(emailUser);
 
@@ -21,12 +21,10 @@ for (let i = 0; i < emailList.length; i++) {
   const currentEmail = emailList[i];
 
   if (emailUser === currentEmail) {
-    outputText = alert("accesso effettuato");
+    outputText = alert("Accesso effettuato");
     // console.log("accesso effettuato");
-  } else {
-    outputText = alert("accesso negato");
   }
 }
-
 console.table(emailList);
-console.log(outputText);
+
+console.log(emailUser);
